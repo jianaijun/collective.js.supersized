@@ -13,8 +13,8 @@
 
 	/* Controls Bar
 	----------------------------*/
-	#controls-wrapper { margin:0 auto; height:42px; width:100%; bottom:0px; left:0; z-index:4; background:url(++resource++supersized/nav-bg.png) repeat-x; position:fixed; }
-		#controls { overflow:hidden; height:100%; position:relative; text-align:left; z-index:5; }
+	#controls-wrapper { margin:0 auto; height:42px; width:100%; bottom:0px; left:0; z-index:1004; background:url(++resource++supersized/nav-bg.png) repeat-x; position:fixed; }
+		#controls { overflow:hidden; height:100%; position:relative; text-align:left; z-index:1005; }
 			#slidecounter { float:left; color:#999; font:14px "Helvetica Neue", Helvetica, Arial, sans-serif; text-shadow:#000 0 -1px 0; margin:0px 10px 0 15px; line-height:42px; }
 			#slidecaption { overflow:hidden; float:left; color:#FFF; font:400 14px "Helvetica Neue", Helvetica, Arial, sans-serif; text-shadow:#000 1px 1px 2px; margin:0 20px 0 0; line-height:42px; }
 			
@@ -40,13 +40,13 @@
 	
 	/* Progress Bar
 	----------------------------*/					
-	#progress-back{ z-index:5; position:fixed; bottom:42px; left:0; height:8px; width:100%; background:url('++resource++supersized/progress-back.png') repeat-x; }
+	#progress-back{ z-index:1005; position:fixed; bottom:42px; left:0; height:8px; width:100%; background:url('++resource++supersized/progress-back.png') repeat-x; }
 		#progress-bar{ position:relative; height:8px; width:100%; background:url('++resource++supersized/progress-bar.png') repeat-x; }
 	
 	
 	/* Thumbnail Navigation
 	----------------------------*/	
-	#nextthumb,#prevthumb { z-index:2; display:none; position:fixed; bottom:61px; height:75px; width:100px; overflow:hidden; background:#ddd; border:1px solid #fff; -webkit-box-shadow:0 0 5px #000; }
+	#nextthumb,#prevthumb { z-index:1002; display:none; position:fixed; bottom:61px; height:75px; width:100px; overflow:hidden; background:#ddd; border:1px solid #fff; -webkit-box-shadow:0 0 5px #000; }
 		#nextthumb { right:12px; }
 		#prevthumb { left:12px; }
 			#nextthumb img, #prevthumb img { width:150px; height:auto;  }
@@ -56,9 +56,9 @@
 	
 	/* Thumbnail Tray
 	----------------------------*/			
-	#thumb-tray{ position:fixed; z-index:3; bottom:0; left:0; background:url(++resource++supersized/bg-black.png); height:150px; width:100%; overflow:hidden; text-align:center; -moz-box-shadow: 0px 0px 4px #000; -webkit-box-shadow: 0px 0px 4px #000; box-shadow: 0px 0px 4px #000; }
+	#thumb-tray{ position:fixed; z-index:1003; bottom:0; left:0; background:url(++resource++supersized/bg-black.png); height:150px; width:100%; overflow:hidden; text-align:center; -moz-box-shadow: 0px 0px 4px #000; -webkit-box-shadow: 0px 0px 4px #000; box-shadow: 0px 0px 4px #000; }
 		
-		#thumb-back, #thumb-forward{ position:absolute; z-index:5; bottom:42px; height:108px; width:40px; }
+		#thumb-back, #thumb-forward{ position:absolute; z-index:1005; bottom:42px; height:108px; width:40px; }
 			#thumb-back{ left:0; background: url('++resource++supersized/thumb-back.png') no-repeat center center;}
 			#thumb-forward{ right:0; background:url('++resource++supersized/thumb-forward.png') no-repeat center center;}
 				#thumb-back:hover, #thumb-forward:hover{ cursor:pointer; background-color:rgba(256,256,256, 0.1); }
