@@ -1,5 +1,5 @@
 from Products.Five.browser import BrowserView
-from zope.app.pagetemplate.viewpagetemplatefile import ViewPageTemplateFile
+from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile
 from zope.interface import implements, Interface
 from Products.Five import BrowserView
 from Products.CMFCore.utils import getToolByName
@@ -50,3 +50,4 @@ $(document).ready(function(){
         'fit_portrait' :    supersized_properties.fit_portrait,
         'fit_landscape'	:   supersized_properties.fit_landscape,
     }
+
